@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      div {
+        float: left;
+        margin: 0 10px;
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        border: 20px solid rgba(0, 0, 0, 0.3);
+        background-image: url("./bg.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        color: white;
+        font-weight: bolder;
+      }
+      .LengthBox {
+        background-size: 100px 100px;
+      }
+      .PercentageBox {
+        background-size: 100% 100%;
+      }
+      .CoverBox {
+        background-size: cover;
+      }
+      .ContainBox {
+        background-size: contain;
+      }
+    </style>
+    <div class="LengthBox">
+      length: 第一个值为宽度，第二个为高度。如果只给一个值，那么第二个值为auto
+    </div>
+    <div class="PercentageBox">
+      percentage:
+      将计算相对于背景定位区域的百分比。第一个值为宽度，第二个为高度。如果只给一个值，那么第二个值为auto
+    </div>
+    <div class="CoverBox">
+      cover: 保持原有尺寸比例。部分内容可能被剪切。但会完全填充元素
+    </div>
+    <div class="ContainBox">
+      contain: 保持原有尺寸比例。内容被缩放。但图片会被完整显示出来
+    </div>
+  </body>
+</html>

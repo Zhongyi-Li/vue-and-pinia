@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      /* origin size : 1200  674*/
+      body {
+        height: 100vh;
+      }
+      .banner {
+        width: 75%;
+        height: 25%;
+        /* width: 70%; */
+        /* height: 25%; */
+        background-color: blanchedalmond;
+      }
+      .container {
+        /* display: none; */
+        /* width: 400px; */
+        /* height: 100px; */
+        /* width: 400px; */
+        width: 75%;
+        height: 25%;
+      }
+      img {
+        /* width: min-content; */
+        /* height: fit-content; */
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* display: none; */
+      }
+    </style>
+    <div class="banner"></div>
+    <div class="container">
+      <img src="./bg.png" alt="" />
+    </div>
+    <script>
+      let timer;
+      //   const setBannerSize = () => {
+      //     const Banner = document.querySelector("div");
+      //     const Img = document.querySelector("img");
+      //     const Container = document.querySelector(".container");
+      //     Container.style.width = Banner.offsetWidth + "px";
+      //     Container.style.height = Banner.offsetHeight + "px";
+      //     Img.style.display = "block";
+      //     Container.style.display = "block";
+      //     Img.style.width = "100%";
+      //     Img.style.height = "100%";
+      //     console.log(
+      //       "窗口变化了：",
+      //       Banner.offsetWidth + "px",
+      //       Banner.offsetHeight + "px"
+      //     );
+      //   };
+      //   window.addEventListener(
+      //     "resize",
+      //     () => {
+      //       if (timer) clearTimeout(timer);
+
+      //       timer = setTimeout(setBannerSize, 300);
+      //     },
+      //     false
+      //   );
+      //   setBannerSize();
+    </script>
+  </body>
+</html>
